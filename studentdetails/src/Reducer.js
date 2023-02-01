@@ -1,11 +1,18 @@
 const Reducer = (state,action) => {
 
     switch (action.type) {
+        case "SET_LOADING":
+            return{
+                ...state,
+                isLoading: true,
+            };
+
         case "GET_STUDENTS":
             return {
                 ...state,
-                Array: action.payload.hits,
-            }
+                isLoading: false,
+                Array: action.payload.Array,
+            };
     }
 
 
