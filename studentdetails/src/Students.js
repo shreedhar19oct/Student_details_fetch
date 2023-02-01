@@ -9,9 +9,9 @@ const Students = () => {
     try{
 
       const res = await fetch(url);
-      const data=await res.json();
+      const data= await res.json();
       console.log(data);
-      isLoading = false;
+      // isLoading = false;
     }
     catch(error){
       console.log(error);
