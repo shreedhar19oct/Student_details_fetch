@@ -16,9 +16,9 @@ const Students = () => {
   return (
   <>
     <h2>Student Information Table</h2>
-    {Array.map((curPost)=>{
+    {/* {Array.map((curPost)=>{
       return <h2>{curPost.name}</h2>;
-    })}
+    })} */}
   </>
   );
     // <div>students</div>
